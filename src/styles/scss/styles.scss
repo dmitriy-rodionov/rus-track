@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans';
+}
+$main-color: #FEC80B;
+$grey-color: #A2A2A2;
+@mixin dropdownIcon {
+    &::after{
+        content: url('../../../img/icons/dropdown.svg');
+        margin-left: 4px;
+        cursor: pointer;
+    }
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+@import 'fonts.scss';
+@import 'header/header';
+@import 'header/header-media';
+@import 'main/main';
+@import 'main/main-media';

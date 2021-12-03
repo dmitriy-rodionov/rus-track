@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <title>Рустрак</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__logo">
+                    <div class="header__name">рустрак</div>
+                    <div class="header__descr">производство и продажа<br> автоспецтехники</div>
+                </div>
+                <div class="header__contacts">
+                    <div class="header__address">
+                        <span>Время работы</span>
+                        г. Нижний Новгород ул. Торфяная, 35
+                    </div>
+                    <div class="header__phones">
+                        <span>Для регионов: 8 (800) 77-77-210</span>
+                        <span>Нижний Новгород: 8 (831) 225-00-55</span>
+                    </div>
+                    <div class="header__call">
+                        <img class="header__call-img" src="img/icons/phone.svg" alt="phone">
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="header__menu-wrapper">
+                    <div class="header__btn">
+                        <div class="header__btn-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div>Каталог</div>
+                    </div>
+                    <ul class="header__menu">
+                        <li class="header__menu-link"><a href="#">О нас</a></li>
+                        <li class="header__menu-link"><a href="#">Медиа</a></li>
+                        <li class="header__menu-link"><a href="#">Сервис</a></li>
+                        <li class="header__menu-link"><a href="#">Новости</a></li>
+                        <li class="header__menu-link"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header__search-wrapper">
+                    <div class="header__input-wrapper">
+                        <input name="search" type="text" class="header__search">
+                    </div>
+                    <img src="img/icons/basket.svg" alt="basket" class="header__basket">
+                    <img src="img/icons/liked.svg" alt="liked" class="header__liked">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="slider">
+                <div class="main__descr">
+                    <h1 class="main__title">Завод-производитель автоспецтехники</h1>
+                    <h2 class="main__subtitle">
+                        ООО «РусТрак» — это компания, занимающаяся производством и поставкой специализированной техники и спецтранспорта
+                    </h2>
+                    <div class="main__btns-wrapper">
+                        <button class="button">Открыть каталог</button>
+                        <button class="button button_transparent">Заказать звонок</button>
+                    </div>
+                </div>
+                <div class="slider__arrow-left"><img src="img/icons/arrow-left.svg" alt="arrow"></div>
+                <div class="slider__arrow-right"><img src="img/icons/arrow-right.svg" alt="arrow"></div>
+                <div class="slider__dots-wrapper">
+                    <div class="slider__dot"></div>
+                    <div class="slider__dot"></div>
+                    <div class="slider__dot"></div>
+                </div>
+                <div class="slider__items-wrapper">
+                    <picture class="slider__item">
+                        <source media="(max-width: 576px)" srcset="img/main/first-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main/first.jpg">
+                        <img src="img/main/first.jpg" alt="image">
+                    </picture>
+                    <picture class="slider__item">
+                        <source media="(max-width: 576px)" srcset="img/main/second-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main/second.jpg">
+                        <img src="img/main/second.jpg" alt="image">
+                    </picture>
+                    <picture class="slider__item">
+                        <source media="(max-width: 576px)" srcset="img/main/third-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/main/third.jpg">
+                        <img src="img/main/third.jpg" alt="image">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bundle.js"></script>
+</body>
+</html>

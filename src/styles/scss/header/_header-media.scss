@@ -1,0 +1,111 @@
+@media(max-width: 1400px) {
+    .container {
+        width: 1140px;
+    }
+    .header{
+        &__top{
+            padding: 14px 30px 9px 30px;
+        }
+        &__bottom{
+            padding: 16px 30px 18px 30px;
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    .header{
+        &__address{
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        &__phones{
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        &__search{
+            width: 260px;
+        }
+        &__menu{
+            margin-left: 25px;
+            &-link{
+                margin-right: 14px;
+            }
+        }
+        &__basket{
+            margin-left: 12px;
+        }
+        &__liked{
+            margin-left: 14px;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .container{
+        width: 720px;
+    }
+    .header{
+        &__phones{
+            display: none;
+        }
+        &__search{
+            display: none;
+        }
+        &__input-wrapper{
+                &:after{
+                    content: url("../../../img/icons/search_2.svg");
+                    right: 0;
+                    top: 0;
+                    position: relative;
+                }
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .container{
+        width: 540px;
+    }
+    .header{
+        &__address{
+            display: none;
+        }
+        &__menu{
+            display: none;
+        }
+        &__basket{
+            margin-left: 35px;
+        }
+        &__liked{
+            margin-left: 35px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .container{
+        width: 100%;
+    }
+    .header{
+        &__top{
+            padding: 10px 16px;
+        }
+        &__bottom{
+            padding: 10px 16px;
+        }
+        &__descr{
+            display: none;
+        }
+        &__basket{
+            margin-left: 20px;
+        }
+        &__liked{
+            margin-left: 20px;
+        }
+    }
+}
