@@ -1,0 +1,45 @@
+.about{
+    padding: 70px 0 160px 60px;
+    position: relative;
+    overflow: hidden;
+    &__descr{
+        width: 37%;
+        z-index: 3;
+    }
+    &__title{
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 50.4px;
+        span{
+            color: $main-color;
+        }
+    }
+    &__text{
+        margin-top: 22px;
+        font-size: 18px;
+        line-height: 27px;
+        p{
+            &:last-child{
+                margin-top: 29px;
+            }
+        }
+    }
+    &__btn{
+        margin-top: 64px;
+        width: 175px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-left: 11px;
+        }
+    }
+    &__img{
+        position: absolute;
+        top: 53px;
+        right: 260px;
+        z-index: -1;
+        width: 50.5%;
+        height: 93.5%;
+    }
+}
