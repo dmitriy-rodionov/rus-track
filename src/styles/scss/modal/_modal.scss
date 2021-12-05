@@ -1,0 +1,126 @@
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba($color: $main-color, $alpha: 0.6);
+    opacity: 0;
+    left: -100%;
+    transition: 0s left, 1s opacity;
+    z-index: 10;
+    &_active{
+        opacity: 1;
+        left: 0;
+    }
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 470px;
+    height: 567px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    &__close{
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    &__title{
+        font-size: 32px;
+        line-height: 38.4px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 64px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        line-height: 20.8px;
+        text-align: center;
+        margin-top: 8px;
+    }
+    &__form{
+        margin-top: 53px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px;
+    }
+    &__input{
+        height: 44px;
+        padding: 0 13px;
+        border: 1px solid #000;
+        opacity: 0.5;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 20.8px;
+        margin-top: 4px;
+        margin-bottom: 25px;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 15.4px;
+    }
+    &__agreement{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__checkbox{
+        width: 41px;
+        height: 27px;
+        margin-right: 12px;
+        margin-left: 1px;
+        position: relative;
+        outline: none;
+        &-text{
+            font-size: 14px;
+            line-height: 15.4px;
+            color: #A1A1A1;
+            a{
+                color: #A1A1A1;
+            }
+        }
+        &:before{
+            content: '';
+            width: 22px;
+            height: 23px;
+            background: $main-color;
+            position: absolute;
+            border-radius: 3px;
+            top: 2px;
+            opacity: 0;
+        }
+        &:after{
+            content: '';
+            width: 9px;
+            height: 22px;
+            position: absolute;
+            top: 0px;
+            right: 3px;
+            border: solid #000;
+            border-width: 0 3px 3px 0;
+            transform: rotate(50deg);
+            opacity: 0;
+        }
+        &:checked{
+            &:before{
+                opacity: 1;
+            }
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+    &__btn{
+        width: 313px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 52px;
+    }
+}

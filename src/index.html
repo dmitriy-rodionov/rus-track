@@ -211,6 +211,28 @@
             </div>
         </div>
     </section>
+    <div class="overlay">
+        <div class="modal">
+            <img src="img/modal/Union.svg" alt="close" class="modal__close">
+            <div class="modal__title">Заказать звонок</div>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время</div>
+            <form action="#" class="modal__form">
+                <label>Имя
+                    <input name="name" required placeholder="Иван Иванов" type="text" class="modal__input">
+                </label>
+                <label>Телефон
+                    <input name="phone" required placeholder="+7" type="phone" class="modal__input">
+                </label>
+                <div class="modal__agreement">
+                    <input type="checkbox" required class="modal__checkbox">
+                    <div class="modal__checkbox-text">
+                        Я согласен на <a href="#">обработку персональных данных компанией ООО «РусТрак»</a>
+                    </div>
+                </div>
+                <button class="button modal__btn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
     <script src="js/bundle.js"></script>
 </body>
 </html>
