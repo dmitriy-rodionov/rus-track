@@ -1,0 +1,26 @@
+.description{
+    padding: 53px 0 65px 0;
+    background-color: $main-color;
+    &__wrapper{
+        display: flex;
+    }
+    &__item{
+        width: 23%;
+        margin-right: 115px;
+    }
+    &__number{
+        font-size: 100px;
+        font-weight: 500;
+        line-height: 100px;
+    }
+    &__word{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 32px;
+    }
+}
