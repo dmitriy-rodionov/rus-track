@@ -1,6 +1,27 @@
 import {tns} from "tiny-slider";
 
 const tiny = ()=> {
+
+    const mainSlider = tns({
+        container: '.slider__items-wrapper',
+        items: 1,
+        mouseDrag: true,
+        controlsContainer: '.slider__arrows',
+        nav: true,
+        navContainer: '.slider__dots-wrapper',
+    });
+
+    mainSlider.events.on('transitionEnd', () => {
+        const mainSliderDots = document.querySelectorAll('.slider__dot');
+        mainSliderDots.forEach((item, i) => {
+            if(i == (mainSlider.getInfo().displayIndex) - 1) {
+                item.classList.add('slider__dot_active');
+            }else {
+                item.classList.remove('slider__dot_active');
+            }
+        });
+    });
+
     const slider = tns({
         container: '.categories__slider',
         items: 4,

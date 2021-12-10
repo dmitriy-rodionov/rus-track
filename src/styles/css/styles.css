@@ -357,7 +357,7 @@
   position: relative;
 }
 .header__input-wrapper::after {
-  content: url("../../../img/icons/search.svg");
+  content: url("../../img/icons/search.svg");
   width: 21px;
   height: 21px;
   position: absolute;
@@ -499,6 +499,7 @@
   position: absolute;
   top: 50%;
   left: 0;
+  z-index: 10;
 }
 .slider__arrow-left img {
   opacity: 50%;
@@ -514,6 +515,7 @@
   position: absolute;
   top: 50%;
   right: 0;
+  z-index: 10;
 }
 .slider__arrow-right img {
   opacity: 50%;
@@ -524,20 +526,22 @@
   transform: translateX(-50%);
   bottom: 16px;
   display: flex;
+  z-index: 10;
 }
 .slider__dot {
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
+  border: 2px solid #fff;
   border-radius: 100%;
   cursor: pointer;
   margin-right: 8px;
+  opacity: 0.8;
 }
 .slider__dot:last-child {
   margin-right: 0;
 }
 .slider__dot_active {
-  background: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
 }
 
 .main__descr {
