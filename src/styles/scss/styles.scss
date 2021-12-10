@@ -8,7 +8,7 @@ $main-color: #FEC80B;
 $grey-color: #A2A2A2;
 @mixin dropdownIcon {
     &::after{
-        content: url('../../../img/icons/dropdown.svg');
+        content: url('../../img/icons/dropdown.svg');
         margin-left: 4px;
         cursor: pointer;
     }
@@ -19,6 +19,7 @@ $grey-color: #A2A2A2;
 }
 
 @import 'fonts.scss';
+@import 'tiny-slider.scss';
 @import 'header/header';
 @import 'header/header-media';
 @import 'main/main';

@@ -1,5 +1,4 @@
 node_modules
 dist
-src/styles/css
 src/js/bundle.js.map
 package-lock.json
